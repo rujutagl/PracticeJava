@@ -1,0 +1,28 @@
+enum Type{
+HEART
+CLUB
+DIAMOND
+SPADE
+}
+Class Deck{
+int numCards;
+Card cards[52];
+
+// constructor to set these values
+}
+
+Class Card{
+int value;
+Type type;
+card(int val, int type){
+// set values
+}
+}
+
+class Player{
+ArrayList<Cards> cards;
+// constructor
+}
+
+
+

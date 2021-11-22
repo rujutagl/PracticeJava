@@ -1,0 +1,81 @@
+
+
+Function requirement :
+1. Create a cart - add items, registered user/guest
+
+    PUT - /cart/{userId}/addItems
+            {
+                Item[] items
+                creationTime,
+                deliveryMethod,
+            }
+            Item - name, quantity, prize
+    GET /cart/{userId}/items
+      res : {
+        Item[] items
+        deliveryMethod,
+        created_at,
+        updated_at,
+      }
+
+      UserCartDetails :
+      Items[] items;
+      DeliveryMethod;
+      CreationTime;
+      TotalAmount;
+2. Update existing cart- update the items, change delivery method
+3. Checkout
+
+Item - store item information
+User - store user info
+UserCart - userid - list of carts
+Cart -  cartId - items list
+
+[
+{
+  itemId: 2,
+  name: 'Milk',
+  category: 'Fresh and Frozen',
+  price: '$2.95',
+  quantity: 1
+},
+{
+    itemId: 4,
+    name: 'Banana',
+    category: 'Fresh and Frozen',
+    price: '$2.95',
+    quantity: 1
+  },
+{
+  itemId: 3,
+  name: 'T-Shirt',
+  category: 'Clothing',
+  price: '$15.99',
+  quantity: 2
+},
+...
+]
+[
+  {
+    category: 'Fresh and Frozen',
+    items: [{
+      itemId: 2,
+      name: 'Milk',
+      price: '$2.95',
+      quantity: 1
+    }]
+  },
+  {
+    category: 'Clothing',
+    items: [{
+      itemId: 3,
+      name: 'T-Shirt',
+      price: '$15.99',
+      quantity: 2
+    }]
+  },
+]
+
+HashMap<String, Item[]> map
+
+
