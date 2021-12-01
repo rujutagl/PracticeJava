@@ -55,6 +55,22 @@ public class StringsAndArrays {
         }
         return false;
     }
+
+    public static boolean isValidSubsequence(List<Integer> array, List<Integer> sequence) {
+        // Write your code here.// 5 1 22 25 6 -1 8 10 // 1 6 -1 10
+        int i = 0;
+        int j = 0;
+        while(i<array.size()){
+            if(sequence.get(j) == array.get(i)){
+                j++;
+                if(j == sequence.size()){
+                    return true;
+                }
+            }
+            i++;
+        }
+        return false;
+    }
     public static void main(String[] args)
     {
         //fizzBuzz(15);
@@ -89,7 +105,22 @@ public class StringsAndArrays {
         // increasing subsequence
         //int[] nums = {1,2,3,4,5};
         //System.out.println(increasingTriplet(nums));
-        System.out.println(findLongestSubstringEfficientSet("abcabcbb"));
+        //System.out.println(findLongestSubstringEfficientSet("abcabcbb"));
+        List<Integer> array = new ArrayList<>(); // 5 1 22 25 6 -1 8 10
+        array.add(5);
+        array.add(1);
+        array.add(22);
+        array.add(25);
+        array.add(6);
+        array.add(-1);
+        array.add(8);
+        array.add(10);
+        List<Integer> seq = new ArrayList<>(); // 1 6 -1 10
+        seq.add(1);
+        seq.add(6);
+        seq.add(-1);
+        seq.add(10);
+        isValidSubsequence(array,seq);
     }
 
     //Find a triplet that sum to a given value
