@@ -1,3 +1,5 @@
+package LinkedList;
+
 import java.util.List;
 import java.util.PriorityQueue;
 
@@ -98,9 +100,9 @@ public class LinkedListLeetCode {
     }
 
     public static void  main(String[] args){
-       /* ListNode a1 = new ListNode(1);
+       /* LinkedList.ListNode a1 = new LinkedList.ListNode(1);
         a1.next = null;
-        ListNode output = removeNthFromEnd(a1, 1);*/
+        LinkedList.ListNode output = removeNthFromEnd(a1, 1);*/
 
         ListNode l1 = new ListNode(1);
         ListNode l11 = new ListNode(2);

@@ -1,4 +1,4 @@
-import BinaryTree.BinaryTree;
+package LinkedList;
 
 import java.util.*;
 
@@ -57,7 +57,7 @@ public class LinkedListTest {
         head2 = b1;
         b1.next = b2;
         b2.next = b3;
-//        ListNode result = addTwoNumbers(head1, head2);
+//        LinkedList.ListNode result = addTwoNumbers(head1, head2);
 //        printList(result);
 
         // odd even list 1,9,1,2,4
@@ -243,7 +243,7 @@ public class LinkedListTest {
     }
 
     // O(n) space O(1)
-    //Populating Next Right Pointers in Each Node
+    //Populating Next Right Pointers in Each LinkedList.Node
     public static Node connect(Node root) {
         if(root == null)
             return null;

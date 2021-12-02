@@ -121,10 +121,10 @@ public class BinaryTreeHeightDFSBalancedLeetCode {
            (c) Postorder (Left, Right, Root) : 4 5 2 3 1
             */
             // O(n) space O(n)
-           /* public List<Integer> inorderTraversal(LinkedListTest.BinaryTree.TreeNode root) {
+           /* public List<Integer> inorderTraversal(LinkedList.LinkedListTest.BinaryTree.TreeNode root) {
                 List<Integer> res = new ArrayList();
-                Stack<LinkedListTest.BinaryTree.TreeNode> stack = new Stack<>();
-                LinkedListTest.BinaryTree.TreeNode curr = root;
+                Stack<LinkedList.LinkedListTest.BinaryTree.TreeNode> stack = new Stack<>();
+                LinkedList.LinkedListTest.BinaryTree.TreeNode curr = root;
                 while(curr != null || !stack.empty()){
                     while(curr != null){
                         stack.push(curr);

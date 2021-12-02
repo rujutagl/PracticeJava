@@ -1,4 +1,6 @@
-import java.util.List;
+package LinkedList;
+
+import LinkedList.ListNode;
 
 public class AddTwoNumersAsLinkedListLeetCode {
     /*
